@@ -68,4 +68,14 @@ trait PageTemplates
             'placeholder' => 'Your content here',
         ]);
     }
+
+    private function auftraege()
+    {
+        $this->crud->addField([
+            'name'        => 'content',
+            'label'       => 'Content',
+            'type'        => 'wysiwyg',
+            'placeholder' => 'Your content here',
+        ]);
+    }
 }
