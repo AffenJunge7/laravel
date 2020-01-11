@@ -1,31 +1,34 @@
-<html>
+<!DOCTYPE html>
+<html lang="de">
     <head>
         <title>App Name - @yield('title')</title>
 
         <!-- load bootstrap from a cdn -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
     </head>
     <body>
 
-        <header role="banner">
-            @include('components.navigation')
-        </header>  
+        <div class="container-fluid p-0">
+            <div class="container my-3">
+
+            
+            @include('components.header')        
         
-        <div class="container">
-
-            <div class="row">            
-                @yield('content')           
-            </div> 
-
-            <footer>
-                @include('components.footer')
-            </footer>
-
-        </div>       
+            <main class="container">
+    
+                <div class="row">            
+                    @yield('content')           
+                </div> 
+            </div>
+                <footer>
+                    @include('components.footer')
+                </footer>
+    
+            </main>      
+        </div>      
 
         <!-- Bootstrap JS-Files -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

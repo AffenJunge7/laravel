@@ -1,1 +1,1 @@
-<p>Hier kommt die Sidebar</p>
+<h1>This is the Sidebar</h1>
